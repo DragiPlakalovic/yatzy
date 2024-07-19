@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>HangMan Game</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>Hangman Game</h1>
+        <h2>Instructions</h2>
+        <p>
+            This game will randomly generate a word that you have to guess. For every incorrect guess, 
+            the game will draw a piece of hangman until the user exhausts all tries and gets a game over.
+        </p>
+        <!-- Playing ground -->
+        <canvas class="gameArea" width="160px" height="320px">Playing area</canvas>
+        <script type="text/javascript" src="HangManGame.js"></script>
+        <!-- Create a form to enter a letter-->
+        <form>
+            <p><label for="guessedLetter">Please enter your guess</label></p>
+            <input type="text" id="guessedLetter" name="guessedLetter" placeholder="Your guess here">
+            <button type="submit">Guess</button>
+        </form>
+    </body>
+</html>
